@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './ImageGalleryItem.module.css';
 import Modal from '../../Modal/Modal';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const ImageGalleryItem = ({ url, alt, largeImageURL }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,10 +26,10 @@ const ImageGalleryItem = ({ url, alt, largeImageURL }) => {
   );
 };
 
-// ImageGalleryItem.propTypes = {
-//   url: PropTypes.string.isRequired,
-//   alt: PropTypes.string.isRequired,
-//   largeImageURL: PropTypes.string.isRequired,
-// };
+ImageGalleryItem.propTypes = {
+  url: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  largeImageURL: PropTypes.string.isRequired,
+};
 
 export default ImageGalleryItem;
